@@ -15,6 +15,8 @@ export class DataService {
         numQuestions: 3
     }
     // private score =0;
+
+    //idk
     private finalScore = 0
 
     private activeGame = false;
