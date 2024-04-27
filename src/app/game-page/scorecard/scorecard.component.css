@@ -1,0 +1,45 @@
+.final_card{
+    display: flex;  
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color:#1F1F1F;
+    width: 500px;
+    height: 320px;
+    border-radius: 50px;
+    gap: 10px;
+    margin-bottom: 30px;
+ 
+}
+.end_div{
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:center;
+    align-items:flex-start;
+    gap:10px;
+}
+.score_header{
+    color:#1FD760;
+}
+.score_div{
+
+    display: flex;  
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items:center;
+    color: white;
+    width: 200px;
+}
+
+.play_again_button{
+    background-color:#1FD760;
+    color: black; 
+    border:none;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+    margin-top: 30px;
+}

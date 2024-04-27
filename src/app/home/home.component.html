@@ -1,0 +1,35 @@
+
+<Div class="home_page">
+  <div class="home_div">
+    <div>
+      <h1 class="title"> WHO'S WHO</h1>
+    </div>
+    <div>
+      <label class="textbox_label">Select Genre:</label><br>
+      <select [(ngModel)]="selectedGenre" (ngModelChange)="setGenre($event)" class="input_box">
+        <option [value]="genre" *ngFor="let genre of genres">
+          {{ genre }}
+        </option>
+      </select>
+      <label for="name" class="textbox_label" >Enter Name:</label><br>
+
+      <input required type="text" id="name" name="name" class="input_box" (keyup)="setPlayerName($event)" placeholder="Who are you?" >
+
+    </div>
+    <div>
+      <p class="radio_title">How many questions would you like?</p>
+      <div class="question_radio">
+        <input class="radio" type="radio" name="num_questions" id="three" value="3" (change)="setNumQuestions($event)" checked>
+        <label for="three">3</label>
+        <input class="radio" type="radio" name="num_questions" id="five" value="5" (change)="setNumQuestions($event)">
+        <label for="five">5</label>
+        <input class="radio" type="radio" name="num_questions" id="ten" value="10" (change)="setNumQuestions($event)">
+        <label for="ten">10</label>
+      </div>
+    </div>
+    <div class="button_div">
+      <button type="submit" class="submit_button" id="leadboard_button"(click)="toLeaderboard()">Leaderboard</button>
+      <button type="submit" class="submit_button" id="game_button" (click)="onSubmit()">Submit</button>
+    </div>
+  </div>
+</Div>

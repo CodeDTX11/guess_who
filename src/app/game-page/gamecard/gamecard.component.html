@@ -1,0 +1,33 @@
+<!-- <div class="question_num"> -->
+    <!-- <h2>Question</h2>
+    <placeholder text -->
+    <!-- <h3>1/10</h3>
+  </div> --> 
+  <div class="game_div">
+    <!-- <div>
+      <h1 class="title"> Guess the Song</h1>
+    </div> -->
+    <div class="album_cover">
+        <img [src]="track.image_url" >
+    </div>
+    <div>
+      <audio controls="controls">
+        <source id="audio_player" [src] ="track.preview_url" type="audio/mpeg"/>
+      </audio>
+    </div>
+
+    <div class="answer_options">
+      <input class="radio" type="radio" name="num_questions" id="three" value="{{answerOptions[0]}}" (change)="selectAnswer($event)">
+      <label for="three">{{answerOptions[0]}}</label>
+      <input class="radio" type="radio" name="num_questions" id="five" value="{{answerOptions[1]}}" (change)="selectAnswer($event)">
+      <label for="five">{{answerOptions[1]}}</label>
+      <input class="radio" type="radio" name="num_questions" id="ten" value="{{answerOptions[2]}}" (change)="selectAnswer($event)">
+      <label for="ten">{{answerOptions[2]}}</label>
+      <input class="radio" type="radio" name="num_questions" id="ten" value="{{answerOptions[3]}}" (change)="selectAnswer($event)">
+      <label for="ten">{{answerOptions[3]}}</label>
+    </div>
+    <div>
+      <!-- placeholder for win condition -->
+      <!-- <h1 style="color:white">Correct!</h1> -->
+    </div> 
+  </div>

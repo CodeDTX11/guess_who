@@ -1,0 +1,30 @@
+*{
+    font-family: sans-serif;
+}
+
+.endgame_page{
+ 
+    width: 100vw;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+    padding-top: 30px;
+
+    overflow: auto;
+    overscroll-behavior: none;
+
+
+
+    /* width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+    overflow: auto;
+    overscroll-behavior: none; */
+}

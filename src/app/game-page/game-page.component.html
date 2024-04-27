@@ -1,0 +1,14 @@
+  <Div class="game_page">
+    <div>
+
+      <h1 class="title"> Guess the Artists!</h1>
+    </div>
+    <app-gamecard *ngFor ="let atrack of tracks"
+    [track]="atrack"
+
+     ></app-gamecard>
+    <div>
+      <button type="submit" class="button" (click)="finishGame()">Submit</button>
+    </div>
+  </Div>
+ 

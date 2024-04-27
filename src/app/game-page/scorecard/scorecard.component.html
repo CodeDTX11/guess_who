@@ -1,0 +1,20 @@
+<Div class="final_card">
+    <div >
+        <!-- toggle for lose and win conditions -->
+        <h1 class="score_header">Score</h1>
+    </div>
+    <div class="end_div">
+        <div class="score_div">
+            <h2>{{userConfigSettings.playerName}}</h2>
+
+            <!-- placeholder score -->
+            <h2>{{scoreToDisplay}}/{{userConfigSettings.numQuestions}}</h2>
+            <!-- <div class="play_again_div"> -->
+                <button type="submit" class="play_again_button" (click)="toHome()">Play Again?</button>
+            <!-- </div> -->
+        </div>
+        <!-- <div class="play_again_div">
+            <button type="submit" class="play_again_button" (click)="toHome()">Play Again?</button>
+        </div> -->
+    </div>
+</Div>

@@ -1,0 +1,53 @@
+.question_num{
+    display: flex;  
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:#1F1F1F;
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    gap: 10px;
+    margin-bottom: 30px;
+    color: white;
+} 
+.album_cover img{
+    height:175px;
+    width:175px;
+    border-radius: 25px;
+    object-fit:cover;
+    /* background-color: #1baf4f; */
+}
+.album_cover{
+  margin-top:25px;
+}
+.game_div{
+
+  display: flex;  
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color:#1F1F1F;
+  width: 600px;
+  height:fit-content;
+  border-radius: 50px;
+  gap: 25px;
+  /* margin-top:25px; */
+  padding:25px;
+
+}
+
+.title{
+    color: #1FD760;
+    margin-top: 30px;
+}
+
+.answer_options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1baf4f;
+  align-content: space-between;
+}

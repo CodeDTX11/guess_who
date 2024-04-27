@@ -1,0 +1,79 @@
+*{
+    font-family: sans-serif;
+}
+
+.home_page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+    overflow: auto;
+    overscroll-behavior: none;
+}
+.home_div{
+  display: flex;  
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color:#1F1F1F;
+  width: 500px;
+  height: 550px;
+  border-radius: 50px;
+  gap: 20px;
+}
+.title{
+    color: #1FD760;
+    margin-top: 30px;
+
+}
+.textbox_label{
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.input_box{
+    border-radius: 25px;
+    height: 30px;
+    width: 200px;
+    padding-left: 10px;
+    border: none;
+}
+#name{
+width:190px
+}
+.radio_title{
+    color:white
+}
+.question_radio{
+    color: white;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    
+}
+.button_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+#leadboard_button{
+    background-color: #FF6437;
+}
+.submit_button{
+    background-color:#1FD760;
+    color: black; 
+    border:none;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+    margin-top: 30px;
+}

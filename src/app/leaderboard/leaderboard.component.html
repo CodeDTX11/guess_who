@@ -1,0 +1,17 @@
+<div class="leaderboard_div">
+    <h1 class="leaderboard_title">Leaderboard</h1>
+
+    <h2 style="color:white;" *ngIf="emptyBoard else elseBlock">Leaderboard is empty!</h2>
+
+    <ng-template #elseBlock>
+        <!-- <h1 style="color:white;">fuck</h1> -->
+        <div class="board" *ngFor="let player of leaderBoard">
+            <div>{{player.name}}</div>
+            <div>{{player.score}}</div>
+        </div>
+    </ng-template>
+</div>
+
+<div class="to_home_div" *ngIf="!isActive">
+    <button type="submit" class="home_button" (click)="toHome()">Home Page</button>
+</div>
